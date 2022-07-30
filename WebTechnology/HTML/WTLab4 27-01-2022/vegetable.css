@@ -1,0 +1,25 @@
+
+h1{
+    text-align: center;
+}
+ body{
+    background-image: url("https://image.freepik.com/free-vector/food-background-with-vegetables_23-2147863102.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 600px; 
+     background-position: center;
+}
+.content{
+    border-radius: 25px;
+    font-weight: 700;
+    background: rgb(235,238,174);
+    background: radial-gradient(circle, #ebeeae 0%, #94e9bc 100%);
+    padding: 10px 10px 20px 40px;
+    margin: auto;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    border: solid 3px green;
+    height:300px;
+    width:600px
+}

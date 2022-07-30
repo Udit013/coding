@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vegetable.css">
+    <title>Vegetable Cart</title>
+</head>
+
+<body>
+    
+    <form>
+        <div class="content">
+            <h1>Vegetable Cart</h1>
+        <table>
+            <td>Choose Vegetables : </td>
+            <td>
+                <select name="veg" id="veg">
+                    <option value="None">None</option>
+                    <option value="Potato">Potato</option>
+                    <option value="Potato">Cauliflower</option>
+                    <option value="Spinach">Onion</option>
+                    <option value="Pumpkin">Pumpkin</option>
+                    <option value="Pumpkin">Ladyfinger</option>
+                    <option value="Onion">Gourd</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Cabbage">Cucumber</option>
+                    <option value="Cucumber">Cucumber</option>
+
+                </select>
+            </td>
+            <tr>
+                <td>Amount in (KGs) : </td>
+                <td>
+                    <select name="amount">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Name : </td>
+                <td><input type="text" name="name1" size="30"></td>
+            </tr>
+            <tr>
+                <td>Mobile : </td>
+                <td><input type="text" name="name2" placeholder="+91" size="30"></td>
+            </tr>
+            <tr>
+                <td>Address : </td>
+                <td>
+                    <textarea rows="5" cols="35" wrap="physical"></textarea>
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td><input type="submit" value="Order Now"></td>
+                <td><input type="reset" name="reset"></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    </form>
+
+</body>
+
+</html>

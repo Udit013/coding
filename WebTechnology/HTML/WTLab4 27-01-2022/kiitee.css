@@ -1,0 +1,17 @@
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.container{
+    background-image: linear-gradient(to left,#008000,white);
+    padding: 2em;
+    margin:3em;
+    border: solid 3px green;
+}

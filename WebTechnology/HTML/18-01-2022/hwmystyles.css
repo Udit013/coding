@@ -1,0 +1,26 @@
+td{
+    background-color: #c0dfd1;
+    width: 80px;
+    height: 25px;
+    border: 2px solid #00203FFF;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table{
+    background-color: #c0dfd1;
+    border: 2px solid #00203FFF;
+    margin: 30px;
+    border-spacing: 1px;
+}
+
+#Table2{
+    border:0;
+    background-color: white;
+}
+
+#Table3{
+    border:0;
+    background-color: white;
+}

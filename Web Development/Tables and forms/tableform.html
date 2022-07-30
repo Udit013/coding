@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE AND FORMS</title>
+</head>
+
+<body>
+    <h1>Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>slno</th>
+                <th>firsttxt</th>
+                <th>useornot</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>hello</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>hey</td>
+                <td>yes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>lol</Td>
+                <td>just</Td>
+                <td>kiddin</Td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>version2</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan=2>slno</th>
+                <th colspan=2>greet</th>
+                <th rowspan=2>useornot</th>
+            </tr>
+            <tr>
+
+                <th>firsttxt</th>
+                <th>secotxt</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>hello</td>
+                <td>miss</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>hey</td>
+                <td>boss</td>
+                <td>yes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>lol</Td>
+                <td>just</Td>
+                <td>so</td>
+                <td>kiddin</Td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Subsciption</th>
+                <th>Price</th>
+                <th>Support</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Free</td>
+                <td>Free</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Personal</td>
+                <td>$9.99</td>
+                <td>Weekdays</td>
+            </tr>
+            <tr>
+                <td>Business</td>
+                <td>$49.99</td>
+                <td>24/7</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>form demos</h1>
+    <form action="/searchresult">
+        <p>
+            <label for="text">ENter textt</label>
+            <input id="text" type="text" placeholder="enter texts" name="searchquerytext">
+        </p>
+        <p>
+            <label for="color">state colour</label>
+            <input type="color" id="color" name="coloursearch">
+        </p>
+        <button>in the middle submits on its own</button>
+        <p>
+            <label for="pass">enter a password</label>
+            <input id="pass" type="password" placeholder="password" name="passsearch">
+        </p>
+        <p>
+            <label for="month">which month?</label>
+            <input type="month" id="month">
+        </p>
+        <button>submits on its own</button>
+        <button type="submit">type submit button</button>
+        <button type="button">just button</button>
+        <input type="submit" value="input submit">
+    </form>
+    <hr>
+    <button>outside form</button>
+
+
+    <form action="https://www.youtube.com/results?">
+        <p>
+            <label for="search">youtube search</label>
+            <input type="text" name="search_query" id="search">
+            <button>youtube search</button>
+        </p>
+    </form>
+    <form action="https://www.google.com/search?">
+        <p>
+            <label for="search">google search</label>
+            <input type="text" name="q" id="search">
+
+        </p>
+    </form>
+
+    <h2>more forms</h2>
+    <form action="/hello">
+        <input type="checkbox" id="check" checked>
+        <label for="check">agreed?</label>
+        <p>
+            <input type="radio" name="mcq" id="one" value="1">
+            <label for="one">1</label><br>
+            <input type="radio" name="mcq" id="two" value="2">
+            <label for="two">2</label><br>
+            <input type="radio" name="mcq" id="three" value="3">
+            <label for="three">3</label><br>
+            <input type="radio" name="mcq" id="four" value="4">
+            <label for="four">4</label><br>
+        </p>
+        <p>
+            <label for="food">menu</label>
+            <select name="meal" id="food">
+                <option value="">---select an option---</option>
+                <option value="paneer" selected>paneer</option>
+                <option value="aloo">aloo</option>
+                <option value="chicken">chicken</option>
+                <option value="mutton">muutton</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="cheese">amount of cheese</label>
+            <input type="range" name="cheese_level" id="cheese" min="0" max="100" step="13" value="50">
+        </p>
+        <p>
+            <label for="numb">enter a number</label>
+            <input type="number" name="num" id="numb" min="1" max="1000" step="100">
+        </p>
+        <p>
+            <label for="anything">type anything you want</label><br>
+            <textarea name="justtype" id="anything" cols="39" rows="7" placeholder="type here"></textarea>
+        </p>
+        <button type="submit">submit</button>
+    </form>
+    <h2>Validation demo</h2>
+    <form action="/nowhere">
+        <p>
+            <label for="firstname">First Name</label>
+            <input type="text" name="first" id="firstname" required>
+        </p>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="8">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

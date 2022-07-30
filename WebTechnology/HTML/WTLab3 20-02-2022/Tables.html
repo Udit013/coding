@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Tables</title>
+    <style>
+        table {
+            text-align: center;
+            vertical-align: middle;
+            margin: 30px;
+        }
+        #table2 td{
+            border:1px solid black;
+         }
+        #table4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+        }
+
+        #table8 {
+            border-top: 1.5px solid rgb(0, 0, 0);
+            border-left: 1.5px solid rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+            border-spacing: 0;
+            text-align: center;
+        }
+
+        #table8 td {
+            border-right: 1.5px solid rgb(0, 0, 0);
+            border-bottom: 1.5px solid rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+            width: 50px;
+        }
+
+        #table8 tr {
+            height: 22px;
+        }
+
+        .first-row {
+            background-color: red;
+        }
+
+        .second-row {
+            background-color: orange;
+        }
+
+        .third-row {
+            background-color: yellow;
+        }
+
+        .forth-row {
+            background-color: green;
+        }
+
+        .fifth-row {
+            background-color: cornflowerblue;
+        }
+
+        .sixth-row {
+            background-color: #2066a8;
+        }
+
+        .seventh-row {
+            background-color: #6b07bd;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table5.1</h2>
+    <table id="table1" border="1" height="200em" width="320em" cellspacing="0">
+        <tr>
+            <td colspan="3">1</td>
+            <td width="35em">4</td>
+            <td rowspan="3">5</td>
+        </tr>
+        <tr>
+            <td height="25em">1</td>
+            <td rowspan="2">2</td>
+            <td width="95em" height="30em">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td height="45em">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="3">2</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td width="80em">1</td>
+            <td>2</td>
+            <td colspan="3" width="100em">3</td>
+        </tr>
+    </table>
+    <h2>Table5.2</h2>
+    <table id="table2" height="210em" width="400em" cellspacing="0">
+        <tr>
+            <td width="95em"></td>
+            <td style="border-left: 2px dashed red; border-right: 2px dashed red;"></td>
+            <td width="80em"></td>
+            <td></td>
+            <td width="125em"></td>
+        </tr>
+        <tr>
+            <td width="95em" height="25em"></td>
+            <td height="25em" style="border-bottom: 2px dashed red;"></td>
+            <td width="80em" height="25em"></td>
+            <td height="20em"></td>
+            <td width="125em" height="25em" style="border-top: 2px dashed red;border-bottom: 2px dashed red;"></td>
+        </tr>
+        <tr>
+            <td width="95em"></td>
+            <td></td>
+            <td width="80em"></td>
+            <td></td>
+            <td width="125em"></td>
+        </tr>
+        <tr>
+            <td width="95em" height="25em" style="border-top: 2px dashed red;"></td>
+            <td height="25em" style=" border-right: 2px dashed red;"></td>
+            <td width="80em" height="25em"></td>
+            <td height="20em" style=" border-left: 2px dashed red;"></td>
+            <td width="125em" height="25em"></td>
+        </tr>
+        <tr>
+            <td width="95em"></td>
+            <td></td>
+            <td width="80em"></td>
+            <td style="border-left: 2px dashed red; border-right: 2px dashed red;"></td>
+            <td width="125em"></td>
+        </tr>
+    </table>
+    <h2>Table5.3</h2>
+    <table id="table3" border="2px" cellspacing="0">
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2">Average</td>
+            <td rowspan="2">Red Eyes</td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>Weight</td>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+    <h2>Table5.4</h2>
+    <table id="table4" border="1">
+        <thead style="background-color: #c4bfbf;">
+            <tr>
+                <td style="height:30px; width:130px">Monday</td>
+                <td style="height:30px; width:130px">Tuesday</td>
+                <td style="height:30px; width:130px">Wednesday</td>
+                <td style="height:30px; width:130px">Thursday</td>
+                <td style="height:30px; width:130px">Friday</td>
+                <td style="height:30px; width:130px">Saturday</td>
+                <td style="height:30px; width:130px">Sunday</td>
+            </tr>
+        <tbody style="color: white;">
+            <tr></tr>
+            <tr>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim <br> 06:30-10:30</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim<br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim <br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim <br> 06:30-11:15</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim <br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #6fb10b;">Lane Swim <br> 08:00-09:00</td>
+                <td style="height:80px; width:130px; background-color: #6fb10b;">Lane Swim <br> 08:00-09:00</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td style="height:80px; width:130px; background-color: #cc0e6d;">Aquacise<br> 06:30-10:30</td>
+                <td style="height:80px; width:130px; background-color: #cc0e6d;">Aqua Jog<br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #21bbae;">Education Swimming Lessons<br>
+                    06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #cc0e6d;">Aquacise<br> 06:30-11:15</td>
+                <td style="height:80px; width:130px; background-color: #21bbae;">Education Swimming Lessons<br>
+                    06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #e48b06;">Oldham Active Kids Swimming Lessons<br>
+                    08:00-09:00</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;;">Public Swim<br> 08:00-09:00</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td style="height:80px; width:130px; background-color: #6fb10b;">Lane Swim<br> 06:30-10:30</td>
+                <td style="height:80px; width:130px; background-color: #cc0e6d;">Parent & Baby Class<br> 06:30-09:00
+                </td>
+                <td style="height:80px; width:130px; background-color: #6fb10b;">Lane Swim<br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #6fb10b;">Lane Swim<br> 06:30-11:15</td>
+                <td style="height:80px; width:130px; background-color: #6fb10b;">Lane Swim<br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #cc0e6d;">Parent & Baby Class<br> 08:00-09:00
+                </td>
+                <td style="height:80px; width:130px; background-color: #cc0e6d;">Aquacise <br> 08:00-09:00</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td style="height:80px; width:130px; background-color: #21bbae;">Education Swimming Lessons<br>
+                    06:30-10:30</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim<br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim <br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #21bbae;">Education Swimming Lessons<br>
+                    06:30-11:15</td>
+                <td style="height:80px; width:130px; background-color: #e48b06;">Oldham Active Kids Swimming
+                    Lessons<br> 06:30-09:00</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim<br> 08:00-09:00</td>
+                <td style="height:80px; width:130px; background-color: #0697c4;">Public Swim<br> 08:00-09:00</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <h2>Table5.6</h2>
+    <table id="table6" border="2" style="border-color: green;">
+        <tr>
+            <td rowspan="3">Table 1</td>
+            <td colspan="2">Table 1
+                <table border="2" style="border-color: blue; margin:0;">
+                    <tr>
+                        <td>Table 2</td>
+                        <td>Table 2</td>
+                    </tr>
+                    <tr>
+                        <td>Table 2</td>
+                        <td>Table 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Table 1</td>
+            <td colspan="2">Table 1</td>
+        </tr>
+    </table>
+    <h2>Table5.8</h2>
+    <table id="table8">
+        <tr class="first-row">
+            <td rowspan="3">1</td>
+            <td rowspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            <td rowspan="3">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr class="second-row">
+            <td>2</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr class="third-row">
+            <td colspan="2">3</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="3">&nbsp;</td>
+        </tr>
+        <tr class="forth-row">
+            <td>4</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr class="fifth-row">
+            <td>5</td>
+            <td colspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr class="sixth-row">
+            <td>6</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr class="seventh-row">
+            <td rowspan="4">7</td>
+            <td rowspan="2" colspan="2">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr class="first-row">
+            <td rowspan="3">8</td>
+            <td rowspan="3" colspan="3">&nbsp;</td>
+        </tr>
+        <tr class="second-row">
+            <td>9</td>
+            <td></td>
+        </tr>
+        <tr class="third-row">
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr class="forth-row">
+            <td>11</td>
+            <td colspan="4">&nbsp;</td>
+            <td></td>
+            <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr class="fifth-row">
+            <td colspan="3">12</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr class="sixth-row">
+            <td colspan="3" rowspan="5">13</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr class="seventh-row">
+            <td>14</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr class="first-row">
+            <td>15</td>
+            <td>&nbsp;</td>
+            <td colspan="2" rowspan="2">&nbsp;</td>
+        </tr>
+        <tr class="second-row">
+            <td rowspan="3">16</td>
+            <td rowspan="3">&nbsp;</td>
+        </tr>
+        <tr class="second-row">
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr class="third-row">
+            <td>17</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="forth-row">
+            <td>18</td>
+            <td colspan="6">&nbsp;</td>
+        </tr>
+    </table>
+
+</html>

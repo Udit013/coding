@@ -1,0 +1,9 @@
+form{
+    background-image: linear-gradient(to left,#5ea8be,white);
+    padding: 2em;
+    margin:3em;
+    border: solid 3px #003c80;
+}
+h2{
+    text-align:center;
+}

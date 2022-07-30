@@ -1,0 +1,67 @@
+html{
+    font-size: 20px;
+}
+h1{
+    background-color: dodgerblue;
+    border:1px solid purple;
+    line-height:200%;
+    font-size: 40px;
+}
+span{
+    background-color: gold;
+    border: 1px solid purple;
+   width:500px;
+   padding:100px;
+   margin:50px;
+}
+
+#percent{
+    background-color: hotpink;
+    width: 800px;
+    height:800px;
+}
+#percent div{
+    height: 50%;
+    width: 50%;
+    background-color: gray;
+    border: 5px solid black;
+    display:inline-block;
+   
+}
+#ems h2{
+    font-size:2em;
+    margin-left: 1em;
+}
+#ems {
+    font-size:30px;
+}
+#ems p{
+    font-size: 1em;
+}
+#ems h3{
+    font-size:1.5em;
+}
+#ems button{
+    background-color: red;
+    color:white;
+    font-size:1em;
+    padding:0 1em;
+    border-radius:0.5em;
+
+}
+ul{
+    font-size:1.5em;
+}
+
+#rems h2{
+    font-size: 3rem;
+}
+#rems h3{
+    font-size: 2rem;
+}
+#rems ul{
+    font-size: 1rem;
+}
+#rems button{
+    font-size: 1.5rem;
+}
