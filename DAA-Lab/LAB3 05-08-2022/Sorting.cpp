@@ -5,6 +5,7 @@
 // Finally plot a graph of the time taken versus n for each type of data.
 
 #include <iostream>
+#include<time.h>
 using namespace std;
 
 int insertionSort(int arr[], int n)
@@ -123,7 +124,7 @@ int main()
             break;
 
         case 5:
-            cout << "Time complexity on random data" << c1;
+            cout << "Time complexity on random data: " << c1;
             break;
         case 6:
 
