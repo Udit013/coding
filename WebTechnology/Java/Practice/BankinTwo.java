@@ -37,6 +37,7 @@ public class BankinTwo {
         catch (Exception e){
             System.out.println(e);
         }
+        sc.close();
     }
     
 }

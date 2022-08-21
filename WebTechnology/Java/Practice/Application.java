@@ -14,5 +14,6 @@ public class Application {
             sum+=1.0/obj.findCube();
             System.out.println("the sum is: "+ sum);
         }
+        sc.close();
     }
 }
