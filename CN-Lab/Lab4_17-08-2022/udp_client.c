@@ -30,8 +30,7 @@ int main()
     // memset(their_addr.sin_zero, '\0', sizeof their_addr.sin_zero);
     printf("Enter a message\n");
     gets(arg);
-    if ((numbytes = sendto(sockfd, arg, strlen(arg), 0,
-                           (struct sockaddr *)&their_addr, sizeof their_addr)) == -1)
+    if ((numbytes = sendto(sockfd, arg, strlen(arg), 0,(struct sockaddr *)&their_addr, sizeof their_addr)) == -1)
     {
         perror("sendto");
         exit(1);
