@@ -1,30 +1,40 @@
-/* 1. Write a program to implement Quick Sort and compare the complexities
+/* 2. Write a program to implement Randomized Quick Sort and compare the complexities
  for best, worst and average cases. Also, plot a graph for the same. */
 
 #include <iostream>
+#include <time.h>
 using namespace std;
 
-int lPartion(int arr[], int low, int high)
+int partition(int arr[], int low, int high)
 {
-    int i = low - 1;
     int pivot = arr[high];
-    for (int j = low; j < high; j++)
+    int i = low - 1;
+
+    for (int j = low; j <= high - 1; j++)
     {
         if (arr[j] < pivot)
         {
             i++;
-            swap(arr[j], arr[i]);
+            swap(arr[i], arr[j]);
         }
     }
-    swap(arr[high], arr[i + 1]);
+    swap(arr[i + 1], arr[high]);
     return (i + 1);
+}
+
+int randomPartition(int arr[], int low, int high)
+{
+    srand(time(0));
+    int random = low + rand() % (high - low);
+    swap(arr[random], arr[high]);
+    return partition(arr, low, high);
 }
 
 void quickSort(int arr[], int low, int high)
 {
-    if (high > low)
+    if (low < high)
     {
-        int pivot = lPartion(arr, low, high);
+        int pivot = randomPartition(arr, low, high);
         quickSort(arr, low, pivot - 1);
         quickSort(arr, pivot + 1, high);
     }
@@ -42,7 +52,7 @@ void printArray(int arr[], int size)
 int main()
 {
     int arr[] = {13, 5, 56, 9, 3, 20, 5, 0};
-    int size = (sizeof(arr) / sizeof(int));
+    int size = sizeof(arr) / sizeof(arr[0]);
     quickSort(arr, 0, size - 1);
     printArray(arr, size);
     return 0;
