@@ -1,5 +1,5 @@
-/* 2. Write a program to implement Randomized Quick Sort and compare the complexities
- for best, worst and average cases. Also, plot a graph for the same. */
+/* 2. Write a program to implement Randomized Quick Sort 
+and plot a graph showing various time complexities */
 
 #include <iostream>
 #include <time.h>
