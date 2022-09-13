@@ -67,7 +67,7 @@ void printTable1()
     int sl = 0;
     // cout << "Sl. No \t  Value of n \t TC(Ascending case)    TC(Desc Case)    TC(Random Case)  \n\n";
 
-    for (int n = 1000; n <= 10000; n = n + 1000)
+    for (int n = 500; n <= 5000; n = n + 500)
     {
         int count = 0;
         int arr1[n];
@@ -96,7 +96,7 @@ void printTable1()
         quickSort(arr3, 0, n, count);
         int avgcase = count;
 
-        cout << bestCase << "\t\t" << worstCase << "\t\t\t" << avgcase << "\n";
+        cout << avgcase /*<< "\t\t" << worstCase << "\t\t\t" << avgcase */<< "\n";
     }
 }
 
@@ -135,7 +135,7 @@ void printTable2()
         randomisedQuickSort(arr3, 0, n, count);
         int avgcase = count;
 
-        cout << bestCase << "\t\t" << worstCase << "\t\t\t" << avgcase << "\n";
+        cout << avgcase <</* bestCase << "\t\t" << worstCase << "\t\t\t" << avgcase << */"\n";
     }
 }
 

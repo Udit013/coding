@@ -1,4 +1,4 @@
-// Wap in c using tcp where client sends an array of 10 elements and 
+// Write a program in c using udp where client sends an array of 10 elements and 
 // at server side you have to find the largest element in array and 
 // send largest element to client.
 
