@@ -25,6 +25,7 @@ void main()
     listen(sockfd, 5);
     length = sizeof(sa);
     fd1 = accept(sockfd, (struct sockaddr *)&ta1, &length);
+    for(i=0;i<100;i++)
         buf[i] = '\0';
 
     strcpy(buf, "Message from server");
