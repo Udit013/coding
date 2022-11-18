@@ -1,16 +1,11 @@
 
-
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 void lcsLength(char *s1, char *s2, int m, int n)
 {
-
     char b[m + 1][n + 1];
     int c[m + 1][n + 1];
-
     for (int i = 1; i <= m; i++)
     {
         c[i][0] = 0;
@@ -21,7 +16,6 @@ void lcsLength(char *s1, char *s2, int m, int n)
         c[0][j] = 0;
         b[0][j] = 'A';
     }
-
     for (int i = 1; i <= m; i++)
     {
         for (int j = 1; j <= n; j++)
@@ -43,9 +37,7 @@ void lcsLength(char *s1, char *s2, int m, int n)
             }
         }
     }
-
-    cout << "Length of the LCS is: " << c[m][n] << endl;
-
+    cout << "Length of the LCS is: " << c[m][n] - 1 << endl;
     for (int i = 0; i <= m; i++)
     {
         for (int j = 0; j <= n; j++)
@@ -54,9 +46,7 @@ void lcsLength(char *s1, char *s2, int m, int n)
         }
         cout << endl;
     }
-
     cout << endl;
-
     for (int i = 1; i <= m; i++)
     {
         for (int j = 1; j <= n; j++)
@@ -65,9 +55,7 @@ void lcsLength(char *s1, char *s2, int m, int n)
         }
         cout << endl;
     }
-
-    string lcs ="";
-
+    string lcs = "";
     int i = m, j = n;
     while (i >= 0 || j >= 0)
     {
@@ -86,10 +74,8 @@ void lcsLength(char *s1, char *s2, int m, int n)
             j--;
         }
     }
-
-    cout << "LCS Is="<<lcs;
+    cout << "LCS Is=" << lcs;
     cout << endl;
-
 }
 
 int main()
