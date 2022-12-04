@@ -3,16 +3,16 @@
 #include <iostream>
 using namespace std;
 
-void fun(int n)
+void print1ton(int n)
 {
     if (n == 0)
         return;
     cout << n << " ";
-    fun(n - 1);
+    print1ton(n - 1);
 }
 
 int main()
 {
     int n = 8;
-    fun(8);
+    print1ton(8);
 }
